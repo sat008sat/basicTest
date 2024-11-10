@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowX - Business Consultancy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 100px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #4461F2;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            padding: 50px 100px;
+            background-color: #f8f9fa;
+            min-height: 500px;
+            align-items: center;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 100px;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 40px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            padding: 20px;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .service-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        /* Stats Section */
+        .stats {
+            background-color: #4461F2;
+            padding: 50px 100px;
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Partner Logos */
+        .partners {
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9fa;
+        }
+
+        .partners img {
+            height: 30px;
+            opacity: 0.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero {
+                padding: 30px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .partners {
+                padding: 20px;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">GrowX</div>
+        <div class="nav-links">
+            <a href="#">Resources</a>
+            <a href="#">Company</a>
+            <a href="#">Pricing</a>
+            <a href="#">Service</a>
+        </div>
+        <div class="nav-buttons">
+            <button class="btn">Log In</button>
+            <button class="btn btn-primary">Sign Up</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Best Services For Your Business Promotion</h1>
+            <p>We offer a wide range of services, including strategy development, operations improvement, financial analysis, marketing strategy, organizational restructuring, and more</p>
+            <button class="btn btn-primary">Get Started</button>
+            <button class="btn">More Features</button>
+        </div>
+        <div class="hero-image">
+            <img src="/api/placeholder/500/500" alt="Business professional" />
+        </div>
+    </section>
+
+    <div class="partners">
+        <img src="/api/placeholder/100/30" alt="NIO" />
+        <img src="/api/placeholder/100/30" alt="Upwork" />
+        <img src="/api/placeholder/100/30" alt="Dell" />
+        <img src="/api/placeholder/100/30" alt="Continental" />
+        <img src="/api/placeholder/100/30" alt="Zendesk" />
+        <img src="/api/placeholder/100/30" alt="Lattice" />
+        <img src="/api/placeholder/100/30" alt="Rakuten" />
+    </div>
+
+    <section class="services">
+        <h2>Creative Solution For Grow Business</h2>
+        <p>Creativity is a valuable asset when it comes to growing a business. Here are some creative solutions that can help you expand and succeed in your business endeavors:</p>
+        
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="/api/placeholder/50/50" alt="Business Analysis" />
+                <h3>Business Analysis</h3>
+                <p>Comprehensive analysis of your business needs and objectives</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="service-card">
+                <img src="/api/placeholder/50/50" alt="Marketing Strategy" />
+                <h3>Marketing Strategy</h3>
+                <p>Develop effective marketing plans to reach your target audience</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="service-card">
+                <img src="/api/placeholder/50/50" alt="User Experience" />
+                <h3>User Experience</h3>
+                <p>Create engaging and intuitive user experiences</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="service-card">
+                <img src="/api/placeholder/50/50" alt="Data Analysis" />
+                <h3>Data Analysis</h3>
+                <p>Transform your data into actionable insights</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>580+</h3>
+                <p>Project Complete</p>
+            </div>
+            <div class="stat-item">
+                <h3>12k</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>240</h3>
+                <p>Expert Team Members</p>
+            </div>
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Winning Awards</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add navigation menu toggle for mobile
+        const navLinks = document.querySelector('.nav-links');
+        const navButtons = document.querySelector('.nav-buttons');
+        
+        // Simple animation for numbers in stats section
+        const stats = document.querySelectorAll('.stat-item h3');
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const value = target.innerText;
+                    let startValue = 0;
+                    const duration = 2000;
+                    const increment = parseInt(value) / (duration / 16);
+                    
+                    const updateCounter = () => {
+                        startValue += increment;
+                        if (startValue < parseInt(value)) {
+                            target.innerText = Math.floor(startValue) + (value.includes('+') ? '+' : '');
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            target.innerText = value;
+                        }
+                    };
+                    
+                    requestAnimationFrame(updateCounter);
+                    observer.unobserve(target);
+                }
+            });
+        }, observerOptions);
+
+        stats.forEach(stat => observer.observe(stat));
+    </script>
+</body>
+</html>
